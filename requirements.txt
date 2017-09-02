@@ -12,7 +12,8 @@ Flask-SQLAlchemy==2.0
 psycopg2
 flask-migrate
 Flask-API
-
+flask-bcrypt
+PyJWT
 
 
 # testing

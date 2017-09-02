@@ -7,7 +7,7 @@ class Config(object):
     DEBUG = False
     CSRF_ENABLED = True
     SECRET = "elevat3dSeaM0nster"
-    SQLALCHEMY_DATABASE_URI = "postgresql://localhost/bucket_db"
+    SQLALCHEMY_DATABASE_URI = "postgresql:///bucket_db"
 
 class DevelopmentConfig(Config):
     """Configurations for Development."""
@@ -16,7 +16,7 @@ class DevelopmentConfig(Config):
 class TestingConfig(Config):
     """Configurations for Testing, with a separate test database."""
     TESTING = True
-    SQLALCHEMY_DATABASE_URI = "postgresql://localhost/test_db"
+    SQLALCHEMY_DATABASE_URI = "postgresql:///test_db"
     DEBUG = True
 
 class StagingConfig(Config):
